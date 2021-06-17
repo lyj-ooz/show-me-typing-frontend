@@ -112,8 +112,6 @@ const Game = memo(({ setUpdateRanking }) => {
     };
     // postData("/api/scores", userData);
     postData("https://show-me-typing.herokuapp.com/api/scores", userData);
-    setUpdateRanking((prev) => prev + 1);
-    resetGame();
   });
 
   const postData = async (url, data) => {
@@ -126,6 +124,8 @@ const Game = memo(({ setUpdateRanking }) => {
         body: JSON.stringify(data),
       });
       const result = await res.json();
+      setUpdateRanking((prev) => prev + 1);
+      resetGame();
     } catch (error) {
       console.log(error);
     }
