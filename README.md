@@ -6,6 +6,8 @@
 
 [https://eager-boyd-d5dc3e.netlify.app/](https://eager-boyd-d5dc3e.netlify.app/)
 
+![typing game webapp screenshot](https://github.com/lyj-ooz/show-me-typing-frontend/blob/master/0617.png)
+
 ## 사용 기술
 
 - react, node.js, mongoDB, webpack
