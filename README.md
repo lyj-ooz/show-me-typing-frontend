@@ -1,4 +1,4 @@
-# 쇼미더타이핑 (❗️이 프로젝트의 백엔드 파트 소스는 [여기](https://github.com/lyj-ooz/show-me-typing)의 /backend 폴더에 있음 )
+# 쇼미더타이핑 (❗️이 프로젝트의 백엔드 파트 소스는 [여기](https://github.com/lyj-ooz/react-sandbox/tree/master/show-me-typing)의 /backend 폴더에 있음 )
 
 타이핑 게임과 그 점수에 따른 랭킹을 보여주는 웹앱 게임 사이트를 만들었다.
 
