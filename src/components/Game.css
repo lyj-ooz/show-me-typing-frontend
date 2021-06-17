@@ -1,0 +1,122 @@
+.game-container {
+  padding-top: 5.25vw;
+}
+
+.game-playing {
+  padding-top: 3.25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #4161b8;
+  min-height: 400px;
+}
+
+.game-time {
+  font-size: 4vw;
+}
+
+.game-word {
+  font-size: 6vw;
+}
+
+.game-playing input {
+  width: 100%;
+  max-width: 700px;
+  border: 2px solid #4161b8;
+  background-color: transparent;
+  padding: 0.3em 0.7em;
+  font-size: min(4vw, 4rem);
+  margin-top: 1rem;
+}
+
+.game-playing button {
+  border: none;
+  padding: 0.5em 1em;
+  font-family: inherit;
+  font-size: 3.5vw;
+  margin-top: 3vw;
+  background-color: #4161b8;
+  color: #fde7c6;
+}
+
+.game-playing button:disabled {
+  background-color: #7a7a7a;
+  color: #a9a9a9;
+  cursor: not-allowed;
+}
+
+.game-score {
+  margin-top: 3vw;
+  font-size: 4vw;
+}
+
+.game-score span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* game save 창 */
+.game-save {
+  width: 100%;
+  background-color: #4161b8;
+  color: #fde7c6;
+  /* font-size: 1.3rem; */
+  font-size: 2.4vw;
+
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+
+.game-save p {
+  margin-bottom: 0.7em;
+}
+
+.game-save input {
+  border: 2px solid #fde7c6;
+  color: inherit;
+  background-color: transparent;
+  padding: 0.4em;
+  font-size: 0.9em;
+}
+
+.game-save input[type="text"] {
+  margin-left: 0.4em;
+  margin-bottom: 0.2em;
+}
+
+.game-save input[type="submit"] {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+}
+
+.game-save input:focus {
+  color: inherit;
+  font-family: inherit;
+}
+
+.game-save small {
+  display: block;
+  font-size: 0.7em;
+}
+
+.game-save button {
+  color: inherit;
+  font-family: inherit;
+  border: 2px solid #fde7c6;
+  background-color: transparent;
+  padding: 0.2rem 0.3rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.game-save button:hover,
+.game-save input[type="submit"]:hover {
+  background-color: #fde7c6;
+  color: #4161b8;
+}

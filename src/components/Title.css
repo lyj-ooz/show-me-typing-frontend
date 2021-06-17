@@ -1,0 +1,10 @@
+header {
+  background-color: #4161b8;
+  color: #fde7c6;
+  padding: 3vw 2vw;
+  font-size: 3.25vw;
+  font-family: "Bungee Outline", cursive;
+  text-align: center;
+}
+
+/* https://www.joshwcomeau.com/css/css-variables-for-react-devs/ */

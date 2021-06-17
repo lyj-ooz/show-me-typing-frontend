@@ -1,0 +1,65 @@
+.ranking-container {
+  background-color: #fde7c6;
+  color: #4161b8;
+  max-height: 100vh;
+  padding-top: 3.25vw;
+  padding-bottom: 30px;
+}
+
+.outline {
+  border: 1px solid #4161b8;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.outline::after {
+  content: "";
+  background-color: #4161b8;
+  position: absolute;
+  top: 7px;
+  left: -17px;
+  height: 101.3%;
+  width: 16px;
+  transform: skewY(-45deg);
+}
+
+.outline::before {
+  content: "";
+  background-color: #4161b8;
+  position: absolute;
+  bottom: -17px;
+  right: 7px;
+  height: 16px;
+  width: 100.5%;
+  transform: skewX(-45deg);
+}
+
+.ranking-title {
+  border-bottom: 1px solid #4161b8;
+  text-align: center;
+  font-size: 4vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.ranking-list {
+  padding: 2.5vw;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.ranking-list .ranking-person,
+.ranking-list .ranking-score {
+  font-size: 2vw;
+
+  width: 50%;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.ranking-list .ranking-score {
+  text-align: right;
+}
