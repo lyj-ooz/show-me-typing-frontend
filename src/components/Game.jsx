@@ -3,7 +3,7 @@ import "./Game.css";
 import Timer from "./Timer";
 
 const shuffleWords = (data) => {
-  console.log("shuffleWords !!!");
+  // console.log("shuffleWords !!!");
 
   const wordsArr = [];
   for (let i = 0; i < data.length; i++) {
@@ -21,7 +21,7 @@ const shuffleWords = (data) => {
 };
 
 const Game = memo(({ setUpdateRanking }) => {
-  console.log("Game 컴포넌트 !!");
+  // console.log("Game 컴포넌트 !!");
   const wordlist = useRef(null);
 
   const [score, setScore] = useState(0);
@@ -34,7 +34,7 @@ const Game = memo(({ setUpdateRanking }) => {
   const [remainZero, setRemainZero] = useState(false);
 
   const getWords = async () => {
-    console.log("getWords!!!");
+    // console.log("getWords!!!");
     try {
       // const res = await fetch("/api/words");
       const res = await fetch("https://show-me-typing.herokuapp.com/api/words");
@@ -53,7 +53,7 @@ const Game = memo(({ setUpdateRanking }) => {
   }, [showSave]);
 
   const onClickStartBtn = useCallback((e) => {
-    console.log("start!");
+    // console.log("start!");
     setStart(true);
   });
 
@@ -66,7 +66,7 @@ const Game = memo(({ setUpdateRanking }) => {
     e.preventDefault();
 
     if (word === inputValue.trim().toLowerCase()) {
-      console.log("일치");
+      // console.log("일치");
       showNextWord();
       setInputValue("");
       updateScore();
@@ -75,7 +75,7 @@ const Game = memo(({ setUpdateRanking }) => {
       word !== inputValue.trim().toLowerCase() ||
       remainZero === true
     ) {
-      console.log("불일치 혹은 시간초과로 끝");
+      // console.log("불일치 혹은 시간초과로 끝");
       setStart(false);
       setShowSave(true);
     }
@@ -104,7 +104,7 @@ const Game = memo(({ setUpdateRanking }) => {
 
   const onSubmitScore = useCallback((e) => {
     e.preventDefault();
-    console.log("form submit..!!");
+    // console.log("form submit..!!");
 
     const userData = {
       username: username,

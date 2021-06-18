@@ -43,7 +43,7 @@ const Timer = memo(({ refresh, setRemainZero }) => {
   useEffect(() => {
     clearTimer(getDeadlineTime());
     return () => {
-      console.log("Timer 컴포넌트 사라짐..");
+      // console.log("Timer 컴포넌트 사라짐..");
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
   }, [refresh]);
@@ -53,7 +53,7 @@ const Timer = memo(({ refresh, setRemainZero }) => {
       mounted.current = true;
     } else {
       if (timer === 0) {
-        console.log("0초다!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+        // console.log("0초다!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         setRemainZero(true);
         if (intervalRef.current) clearInterval(intervalRef.current);
       }
@@ -64,8 +64,6 @@ const Timer = memo(({ refresh, setRemainZero }) => {
   //   if (intervalRef.current) clearInterval(intervalRef.current);
   //   clearTimer(getDeadlineTime());
   // }
-
-  // 여긴가...?
 
   return <div className="game-time">{timer}</div>;
 });
