@@ -1,0 +1,32 @@
+.loading-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.loading-text {
+  position: relative;
+}
+
+.loading-text::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 75%;
+  background-color: #4161b8;
+  top: 50%;
+  right: -3px;
+  transform: translateY(-50%);
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: blink 0.5s steps(2, end) infinite;
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
